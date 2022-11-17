@@ -1,4 +1,6 @@
-# PMG_Assessment
+# PMG_Assessment 
+## By Srivats Srinivasan Ramanujam, Information Technology and Management, the University of Texas at Dallas
+### https://www.linkedin.com/in/srivatsramanujam/
 
 ## Solutions for the PMG SQL Assessment - Solved using MS SQL Server
 
