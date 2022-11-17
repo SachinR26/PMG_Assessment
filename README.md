@@ -29,7 +29,7 @@ group by ISNULL(m.geo,RIGHT(s.store_location,2)),ISNULL(m.date,s.date), m.impres
 <b>Explanation:</b><br>
 USING RIGHT function in the outer join clause is faster that the SUBSTRING function. The reason I used SUBSTRING was, 
 if the length of state changed from TX to Texas, it will still be able to accomodate that change. We can use Right(s.store_location,2) 
-which will still fetch the same answer
+which will still fetch the same answer <br>
 select ISNULL(m.date,s.date) as Date, ISNULL(m.geo,RIGHT(s.store_location,2)) as Geo, m.impressions as Impressions, m.clicks as Clicks, sum(s.revenue) as Total_Revenue 
 from marketing_data m full outer join store_revenue s on m.date=s.date and 
 m.geo = <br>RIGHT(s.store_location,2)</br>
